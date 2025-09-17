@@ -1122,7 +1122,7 @@ https://www.tooplate.com/view/2138-aqua-nova
             filter: drop-shadow(0 0 10px rgb(249, 207, 22));
         }
 
-        .contact-form::before {
+        /*.contact-form::before {
             content: '';
             position: absolute;
             top: 0;
@@ -1133,7 +1133,7 @@ https://www.tooplate.com/view/2138-aqua-nova
             background-size: 150px 30px;
             animation: gentleWaves 6s ease-in-out infinite;
             pointer-events: none;
-        }
+        }*/
 
         /* Form styling - Fixed */
         .form-group {
