@@ -205,11 +205,20 @@ Free HTML CSS Template
             </select>
             <select id="estadoPedido" class="dive-btn" style="margin-top: 1rem;" required>
                 <option value="">Estado de Pedido 🍻</option>
+                <option value="confirmado">Pendiente</option>
                 <option value="confirmado">Confirmado</option>
-                <option value="noConfirmado">No Confirmado</option>
-                <option value="enEspera">En Espera</option>
-                <option value="finalizado">Finalizado</option>
+                <option value="noConfirmado">En Preparación</option>
+                <option value="enEspera">En Camino</option>
+                <option value="enEspera">Entregado</option>
+                <option value="enEspera">Cancelado</option>
+                <option value="enEspera">Rechazado</option>
+                <option value="finalizado">Devuelto</option>
             </select>
+            <label style="margin-top: 1rem; font-size: 1.2rem;">
+                <input type="checkbox" id="pagadoCheck" style="margin-right: 0.5rem;">
+                Pagado
+            </label>
+
         </div>
      <div class="form-group">
             <button type="button" id="mostrarFechaBtn" class="dive-btn" style="margin-top: 1rem;">Fecha de Entrega</button>
