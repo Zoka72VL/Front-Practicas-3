@@ -281,7 +281,7 @@
 
   function validarForm(){
     let ok = true;
-    [nombre,email,direccion,telefono,cervezaColor,cervezaTipo,cantidadBarriles,estado,direccionEntrega].forEach(el=>{
+    [cervezaTipo,cantidadBarriles,estado,direccionEntrega].forEach(el=>{
       el.style.borderColor = '';
       if(!el.value){ el.style.borderColor = '#e74c3c'; ok = false; }
     });
