@@ -194,12 +194,10 @@
     }
     });
     // Mostrar campo de fecha al hacer clic en el botón
-    document.getElementById('mostrarFechaBtn').addEventListener('click', function() {
     document.getElementById('fechaEntrega').style.display = 'block';
     document.getElementById('fechaEntrega').focus();
-});
 
-// Gestión de Pedidos de Cerveza con LocalStorage
+    // Gestión de Pedidos de Cerveza con LocalStorage
 (function(){
   const $id = id => document.getElementById(id);
   const formatDate = d => new Date(d).toLocaleString();
@@ -399,4 +397,6 @@
   renderListado();
   calcularTotal();
 })();
+
+
 
