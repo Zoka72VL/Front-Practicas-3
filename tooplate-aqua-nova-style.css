@@ -1740,3 +1740,219 @@ align-items: center;
 padding: 0.5rem 0.75rem;
 margin-top: 1rem;
 }
+
+/*formulario crear pedido
+
+/* Contenedor general y layout basico */
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+}
+#logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Controles superiores */
+section > #btn-agregar,
+section > #buscar {
+  margin: 12px;
+}
+
+/* Tabla pedidos */
+#tabla-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 28px 0;
+}
+#tabla-pedidos thead th {
+  text-align: left;
+  padding: 12px;
+}
+#tabla-pedidos tbody td {
+  padding: 10px;
+}
+#tabla-pedidos button {
+  margin-right: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Form section */
+#form-section {
+  padding: 18px;
+  margin: 16px 0;
+}
+
+/* Fieldset / form-group general */
+#form-pedido fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form-group {
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Inputs y textarea (aplican a los inputs del formulario por id) */
+#form-pedido input,
+#form-pedido textarea,
+#form-pedido select {
+  width: 100%;
+  padding: 20px;
+  background: rgba(212, 116, 6, 0.795);
+  border: 2px solid rgba(208, 212, 6, 0.3);
+  border-radius: 15px;
+  color: rgba(241, 237, 14, 0.973);
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* focus */
+#form-pedido input:focus,
+#form-pedido textarea:focus,
+#form-pedido select:focus {
+  outline: none;
+  border-color: var(--sea-foam);
+  box-shadow: 0 0 30px rgba(185, 131, 16, 0.4);
+  background: rgba(185, 83, 16, 0.08);
+}
+
+/* placeholder */
+#form-pedido input::placeholder,
+#form-pedido textarea::placeholder {
+  color: rgba(241, 237, 14, 0.973);
+  opacity: 1;
+}
+
+/* Botones estilo "dive-btn" */
+.dive-btn,
+#btn-agregar,
+#btn-pedir-barriles,
+#btn-pedir-accesorios,
+#btn-guardar,
+#btn-cancelar,
+#btn-abrir-barriles,
+#btn-abrir-accesorios,
+#btn-cancelar-barriles,
+#btn-cancelar-accesorios {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, var(--ocean-surface), var(--sea-foam));
+  color: var(--deep-ocean);
+  padding: 20px 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+/* efecto ripple pseudo-elemento */
+.dive-btn::before,
+#btn-agregar::before,
+#btn-pedir-barriles::before,
+#btn-pedir-accesorios::before,
+#btn-guardar::before,
+#btn-cancelar::before,
+#btn-abrir-barriles::before,
+#btn-abrir-accesorios::before,
+#btn-cancelar-barriles::before,
+#btn-cancelar-accesorios::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(248, 250, 252, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease;
+}
+
+/* hover */
+.dive-btn:hover,
+#btn-agregar:hover,
+#btn-pedir-barriles:hover,
+#btn-pedir-accesorios:hover,
+#btn-guardar:hover,
+#btn-cancelar:hover,
+#btn-abrir-barriles:hover,
+#btn-abrir-accesorios:hover,
+#btn-cancelar-barriles:hover,
+#btn-cancelar-accesorios:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(212, 140, 6, 0.5);
+}
+.dive-btn:hover::before,
+#btn-agregar:hover::before,
+#btn-pedir-barriles:hover::before,
+#btn-pedir-accesorios:hover::before,
+#btn-guardar:hover::before,
+#btn-cancelar:hover::before,
+#btn-abrir-barriles:hover::before,
+#btn-abrir-accesorios:hover::before,
+#btn-cancelar-barriles:hover::before,
+#btn-cancelar-accesorios:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+/* Tabla items dentro del formulario */
+#tabla-items {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+#tabla-items th, #tabla-items td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Modales simples (sin overlay) */
+#modal-barriles,
+#modal-accesorios {
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.06);
+}
+
+/* Inputs de estado / checkbox */
+#estado-pago {
+  transform: scale(1.2);
+  margin-left: 8px;
+}
+
+/* Responsivo simple */
+@media (max-width: 800px) {
+  #form-pedido input,
+  #form-pedido textarea,
+  #form-pedido select {
+    padding: 14px;
+  }
+  .dive-btn,
+  #btn-agregar,
+  #btn-guardar,
+  #btn-cancelar {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+}

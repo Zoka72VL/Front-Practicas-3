@@ -8,15 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="tooplate-aqua-nova-style.css" rel="stylesheet">
-<!--
-
-Tooplate 2138 Aqua Nova
-
-https://www.tooplate.com/view/2138-aqua-nova
-
-Free HTML CSS Template
-
--->
 </head>
 <body>
     <div id="underwater-bg"></div>
@@ -90,29 +81,7 @@ Free HTML CSS Template
             </div>
         </div>
     </section>  
-    
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqua Nova - Ocean Explorer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="tooplate-aqua-nova-style.css" rel="stylesheet">
-<!--
-
-Tooplate 2138 Aqua Nova
-
-https://www.tooplate.com/view/2138-aqua-nova
-
-Free HTML CSS Template
-
--->
-</head>
-<body>
+    <section>
     <div id="underwater-bg"></div>
 
     <nav id="navbar">
@@ -184,187 +153,662 @@ Free HTML CSS Template
             </div>
         </div>
     </section>  
-    <!-- <section id="armarPedido" class="fade-in">
-    <h2 class="section-title">Crear Pedido</h2>
-    <div class="contact-container">
-        <form class="contact-form">
+<!-- Controles superiores -->
+  <section>
+    <button id="btn-agregar">Crear Pedido</button>
+    <input id="buscar" type="search" placeholder="Buscar por ID o cliente" />
+  </section>
 
 
 
-             
-                <div class="form-group">
-                    <select id="buscarClienteSelect" class="dive-btn" style="margin-top: 1rem;" required>
-                                        <option value="">Buscar Cliente</option>
-                                        <option value="dni">DNI</option>
-                                        <option value="nombre">Nombre</option>
-                                        <option value="email">Email</option>
-                                        <option value="telefono">Teléfono</option>
-                    </select>
-                            <input type="text" id="buscarClienteInput" style="margin-top: 1rem; display:none;" required>
-                            <button type="button" id="buscarClienteBtn" class="dive-btn" style="margin-top: 1rem; display:none;">Buscar</button>
-                     </select>
-                        </div>
+  <!-- Formulario de Alta / Modificación -->
+  <section id="form-section" hidden>
+    <form id="form-pedido">
+      <fieldset>
+        <legend>Pedido</legend>
 
-                
-                      
-        </form>
-    </div>
-    <div class="contact-container">
-        <div class="form-group">
-            <select class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Selecciona Cerveza 🍻</option>
-                <option value="rubia">Rubia</option>
-                <option value="negra">Negra</option>
-                <option value="roja">Roja</option>
-            </select>
-            <select id="cervezaSelect" class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Tipo de Cerveza 🍻</option>
-                <option value="litro">Litro</option>
-                <option value="barril">Barril</option>
-            </select>
-            <input type="number" placeholder="Cantidad de Barriles" style="margin-top: 1rem;" required>
-            <select class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Confirma Accesorios 🍻</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-            </select>
-            <select class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Estado de Pedido 🍻</option>
-                <option value="confirmado">Confirmado</option>
-                <option value="noConfirmado">No Confirmado</option>
-                <option value="enEspera">En Espera</option>
-                <option value="finalizado">Finalizado</option>
-            </select>
+        <div>
+          <label for="pedido-id">Id Pedido</label>
+          <input id="pedido-id" name="id" type="text" readonly />
         </div>
-     <div class="form-group">
-            <button type="button" id="mostrarFechaBtn" class="dive-btn" style="margin-top: 1rem;">Fecha de Entrega</button>
-            <input type="datetime-local" id="fechaEntrega" class="dive-btn" style="margin-top: 1rem; display:none;" required>
-            <input type="text" class="dive-btn" id="direccionEntrega" style="margin-top: 1rem;" placeholder="Dirección de Entrega" required>
-            <div id="mapaEntrega" style="margin-top: 1rem; width: 100%; height: 300px; display: none;"></div>
-    </div>  
-    <div id="mapaEntrega" style="margin-top: 1rem; width: 100%; height: 300px; display: none;">
-    
 
-            <button type="button" id="confirmarPedido" class="dive-btn" style="margin-top: 1rem; display:none;">Confirmar Pedido</button>
-
-    </div>
-    </section> -->
-
-    <section id="armarPedidoAsociado" class="fade-in">
-    <h2 class="section-title">Crear Pedido</h2>
-    <div class="contact-container">
-        <form id="pedidoForm" class="contact-form" novalidate>
-
-                <!-- probando -->
-                <div class="form-group">
-                    <select id="buscarClienteSelect" class="dive-btn" style="margin-top: 1rem;" required>
-                                        <option value="">Buscar Cliente</option>
-                                        <option value="dni">DNI</option>
-                                        <option value="nombre">Nombre</option>
-                                        <option value="email">Email</option>
-                                        <option value="telefono">Teléfono</option>
-                    </select>
-                            <input type="text" id="buscarClienteInput" style="margin-top: 1rem; display:none;" required>
-                            <button type="button" id="buscarClienteBtn" class="dive-btn" style="margin-top: 1rem; display:none;">Buscar</button>
-                 </div>
-
-                <!-- Datos cliente (reaprovecho tus inputs existentes) -->
-                <div class="form-group" style="margin-top:1rem;">
-                    <input type="text" id="clienteNombre" class="dive-btn" placeholder="Nombre / Razón Social" required>
-                    <input type="email" id="clienteEmail" class="dive-btn" placeholder="E-mail" required style="margin-top:0.5rem;">
-                    <input type="text" id="clienteDireccion" class="dive-btn" placeholder="Dirección de Facturación" required style="margin-top:0.5rem;">
-                    <input type="tel" id="clienteTelefono" class="dive-btn" placeholder="Teléfono" required style="margin-top:0.5rem;">
-                </div>
-
-        </form>
-    </div>
-    <div class="contact-container">
-        <div class="form-group">
-            <select id="cervezaColor" class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Selecciona Cerveza 🍻</option>
-                <option value="rubia">Rubia</option>
-                <option value="negra">Negra</option>
-                <option value="roja">Roja</option>
-            </select>
-            <select id="cervezaTipo" class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Barril o Litro 🍻</option>
-                <option value="litro" data-price="800">Litro</option>
-                <option value="barril" data-price="15000">Barril</option>
-            </select>
-            <input type="number" id="cantidadBarriles" placeholder="Cantidad de Unidades" style="margin-top: 1rem;" min="1" value="1" required>
-            <select id="confirmAcc" class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Confirma Accesorios 🍻</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-            </select>
-            <select id="estadoPedido" class="dive-btn" style="margin-top: 1rem;" required>
-                <option value="">Estado de Pedido 🍻</option>
-                <option value="confirmado">Pendiente</option>
-                <option value="confirmado">Confirmado</option>
-                <option value="noConfirmado">En Preparación</option>
-                <option value="enEspera">En Camino</option>
-                <option value="enEspera">Entregado</option>
-                <option value="enEspera">Cancelado</option>
-                <option value="enEspera">Rechazado</option>
-                <option value="finalizado">Devuelto</option>
-            </select>
-            <label style="margin-top: 1rem; font-size: 1.2rem;">
-                <input type="checkbox" id="pagadoCheck" style="margin-right: 0.5rem;">
-                Pagado
-            </label>
-
+        <div>
+          <label for="fecha-pedido">Fecha de pedido</label>
+          <input id="fecha-pedido" name="fechaPedido" type="date" />
         </div>
-     <div class="form-group">
-            <div id="Fecha" class="dive-btn" style="margin-top: 1rem; cursor: default;">
-                        Fecha de Entrega
-            </div>
 
-            <input type="datetime-local" id="fechaEntrega" class="dive-btn" style="margin-top: 1rem; display:inline-flexbox;" required>
-            <input type="text" class="dive-btn" id="direccionEntrega" style="margin-top: 1rem;" placeholder="Dirección de Entrega" required>
-            <div id="mapaEntrega" style="margin-top: 1rem; width: 100%; height: 300px; display: none;"></div>
-    </div>
+        <div>
+          <label for="fecha-entrega">Fecha de entrega</label>
+          <input id="fecha-entrega" name="fechaEntrega" type="date" />
+        </div>
 
+        <div>
+          <label for="hora-entrega">Horario entrega</label>
+          <select id="hora-entrega" name="horaEntrega">
+            <option value="08-12">A la mañana (08-12)</option>
+            <option value="13-18">A la tarde (13-18)</option>
+            <option value="19-23">A la noche (19-23)</option>
+          </select>
+        </div>
 
+        <h4>Datos del cliente</h4>
 
+        <div>
+          <label for="cliente-nombre">Nombre / Razón Social</label>
+          <input id="cliente-nombre" name="clienteNombre" type="text" />
+        </div>
+
+        <div>
+          <label for="cliente-email">Email</label>
+          <input id="cliente-email" name="clienteEmail" type="email" />
+        </div>
+
+        <div>
+          <label for="cliente-telefono">Teléfono</label>
+          <input id="cliente-telefono" name="clienteTelefono" type="tel" />
+        </div>
+
+        <div>
+          <label for="cliente-domicilio">Domicilio / Lugar de Entrega</label>
+          <input id="cliente-domicilio" name="clienteDomicilio" type="text" />
+        </div>
+
+        <h4>Detalle del pedido</h4>
+
+        <div>
+          <label for="selector-cerveza">Selector de Cerveza / Barriles</label>
+          <select id="selector-cerveza"></select>
+          <button type="button" id="btn-abrir-barriles">Agregar Barriles</button>
+        </div>
+
+        <!-- Modal simple para seleccionar barriles (sin estilos) -->
+        <div id="modal-barriles" hidden>
+          <h5>Seleccionar barriles llenos</h5>
+          <div id="lista-barriles"></div>
+          <button type="button" id="btn-pedir-barriles">Pedir</button>
+          <button type="button" id="btn-cancelar-barriles">Cancelar</button>
+        </div>
+
+        <div>
+          <label for="selector-accesorio">Selector de Accesorios</label>
+          <select id="selector-accesorio"></select>
+          <button type="button" id="btn-abrir-accesorios">Agregar Accesorios</button>
+        </div>
+
+        <!-- Modal accesorio -->
+        <div id="modal-accesorios" hidden>
+          <h5>Seleccionar accesorios disponibles</h5>
+          <div id="lista-accesorios"></div>
+          <button type="button" id="btn-pedir-accesorios">Pedir</button>
+          <button type="button" id="btn-cancelar-accesorios">Cancelar</button>
+        </div>
+
+        <div>
+          <h5>Items agregados</h5>
+          <table id="tabla-items" border="1" cellpadding="4" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio unidad</th>
+                <th>Subtotal</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div>
+          <label for="nota">Nota</label>
+          <textarea id="nota" name="nota"></textarea>
+        </div>
+
+        <div>
+          <label for="monto-cerveza">Monto Cerveza (no editable)</label>
+          <input id="monto-cerveza" name="montoCerveza" type="number" readonly />
+        </div>
+
+        <div>
+          <label for="monto-accesorios">Monto Accesorios</label>
+          <input id="monto-accesorios" name="montoAccesorios" type="number" step="0.01" />
+        </div>
+
+        <div>
+          <label for="total-general">Total General</label>
+          <input id="total-general" name="totalGeneral" type="number" readonly />
+        </div>
+
+        <div>
+          <label for="estado-pedido">Estado</label>
+          <select id="estado-pedido" name="estadoPedido">
+            <option value="pendiente">Pendiente</option>
+            <option value="confirmado">Confirmado</option>
+            <option value="en preparación">En preparación</option>
+            <option value="en camino">En camino</option>
+            <option value="entregado">Entregado</option>
+            <option value="cancelado">Cancelado</option>
+            <option value="rechazado">Rechazado</option>
+            <option value="devuelto">Devuelto</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="estado-pago">Estado de pago</label>
+          <input id="estado-pago" name="estadoPago" type="checkbox" /> Pagado (✔)
+        </div>
+
+        <div>
+          <button id="btn-guardar" type="submit">Guardar</button>
+          <button id="btn-cancelar" type="button">Cancelar</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </section>
+
+    <!-- Tabla de pedidos (listado por defecto descendente por fecha) -->
+  <section>
+    <table id="tabla-pedidos" border="1" cellspacing="0" cellpadding="4">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fecha Pedido</th>
+          <th>Cliente</th>
+          <th>Estado</th>
+          <th>Pago</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- filas generadas dinámicamente -->
+      </tbody>
+    </table>
+  </section>
  
-    <div style="margin-top:1rem;">
-            <button type="button" id="confirmarPedido" class="dive-btn" style="display:none;">Confirmar Pedido</button>
-    </div>
-           <div id="totalBox" style="margin-top:1rem; font-weight:700; font-size:2rem;">Total: $<span id="totalMonto">0</span></div>
-
-    </div>
-
-    <!-- Listado y modal -->
-    <div class="contact-container">
-        <h3 class="section-title" style="font-size:4rem;">Listado de Pedidos</h3>
-            <div style="margin-top:1rem;">
-                <button type="button" id="confirmarPedido" class="dive-btn" style="display:flex;">Ver Pedidos</button>
-            </div>    
-
-        <div id="listadoPedidos"></div>
-    </div>
-
-    <div id="modalVer" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); align-items:center; justify-content:center;">
-      <div style="background:#fff; padding:1rem; border-radius:8px; width:90%; max-width:720px;">
-        <button id="cerrarModal" class="dive-btn" style="float:right;">Cerrar</button>
-        <div id="detalleContenido"></div>
-      </div>
-    </div>
-
-
-
-
-
-    </section>
-    <footer>       
-        <div class="footer-bottom">
-            <p> Inst12 La Plata</p>
-        </div>
+   
     </footer>
 
 
 
 
     <script src="tooplate-aqua-nova-scripts.js"></script>
+    <script >
+    // Datos de ejemplo (simulan backend)
+    const db = {
+      nextId: 4,
+      pedidos: [
+        {
+          id: 3,
+          fechaPedido: '2025-09-25',
+          cliente: { nombre: 'Juan Pérez', email: 'juan@example.com', telefono: '12345678', domicilio: 'Calle 1' },
+          fechaEntrega: '2025-09-27',
+          horaEntrega: '13-18',
+          items: [
+            { tipo: 'barril', descripcion: 'Pale Ale 20L', cantidad: 1, precioUnidad: 1500 }
+          ],
+          montoAccesorios: 200,
+          nota: '',
+          estado: 'pendiente',
+          pagado: false
+        },
+        {
+          id: 2,
+          fechaPedido: '2025-09-24',
+          cliente: { nombre: 'ACME S.R.L.', email: 'ventas@acme.com', telefono: '87654321', domicilio: 'Av. Falsa 123' },
+          fechaEntrega: '2025-09-26',
+          horaEntrega: '08-12',
+          items: [
+            { tipo: 'barril', descripcion: 'IPA 20L', cantidad: 2, precioUnidad: 1400 },
+            { tipo: 'accesorio', descripcion: 'Canilla', cantidad: 1, precioUnidad: 300 }
+          ],
+          montoAccesorios: 300,
+          nota: 'Dejar en portería',
+          estado: 'confirmado',
+          pagado: true
+        },
+        {
+          id: 1,
+          fechaPedido: '2025-09-20',
+          cliente: { nombre: 'María López', email: 'maria@example.com', telefono: '5555555', domicilio: 'Calle 9' },
+          fechaEntrega: '2025-09-22',
+          horaEntrega: '19-23',
+          items: [
+            { tipo: 'barril', descripcion: 'Lager 20L', cantidad: 1, precioUnidad: 1300 }
+          ],
+          montoAccesorios: 0,
+          nota: '',
+          estado: 'entregado',
+          pagado: true
+        }
+      ],
+      cervezas: [
+        { id: 'c1', nombre: 'Pale Ale', litrosPorBarril: 20, precioPorLitro: 75, barriles: [
+          { id: 'b1', lleno: true },
+          { id: 'b2', lleno: false },
+          { id: 'b3', lleno: true }
+        ]},
+        { id: 'c2', nombre: 'IPA', litrosPorBarril: 20, precioPorLitro: 70, barriles: [
+          { id: 'b4', lleno: true },
+          { id: 'b5', lleno: true }
+        ]},
+        { id: 'c3', nombre: 'Lager', litrosPorBarril: 20, precioPorLitro: 65, barriles: [
+          { id: 'b6', lleno: false },
+          { id: 'b7', lleno: true }
+        ]}
+      ],
+      accesorios: [
+        { id: 'a1', nombre: 'Canilla', precio: 300, disponible: true },
+        { id: 'a2', nombre: 'Enfriador', precio: 500, disponible: false },
+        { id: 'a3', nombre: 'Conector', precio: 150, disponible: true }
+      ]
+    };
+
+    // Utilidades
+    const $ = id => document.getElementById(id);
+    const tbodyPedidos = document.querySelector('#tabla-pedidos tbody');
+    const tablaItemsBody = document.querySelector('#tabla-items tbody');
+
+    // Inicializar selects y tabla
+    function init() {
+      renderTablaPedidos();
+      populateSelects();
+      setupEventListeners();
+    }
+
+    // Render tabla pedidos ordenada por fecha descendente
+    function renderTablaPedidos(filter = '') {
+      // ordenar por fecha descendente
+      const pedidos = db.pedidos.slice().sort((a,b) => new Date(b.fechaPedido) - new Date(a.fechaPedido));
+      tbodyPedidos.innerHTML = '';
+      pedidos.filter(p => {
+        if (!filter) return true;
+        const q = filter.toLowerCase();
+        return String(p.id).includes(q) || p.cliente.nombre.toLowerCase().includes(q);
+      }).forEach(p => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${p.id}</td>
+          <td>${p.fechaPedido}</td>
+          <td>${escapeHtml(p.cliente.nombre)}</td>
+          <td>${p.estado}</td>
+          <td>${p.pagado ? '✔' : ''}</td>
+          <td>${formatNumber(totalPedido(p))}</td>
+          <td>
+            <button data-id="${p.id}" class="btn-ver">Ver</button>
+            <button data-id="${p.id}" class="btn-modificar">Modificar</button>
+            <button data-id="${p.id}" class="btn-cancelar-pedido">Cancelar</button>
+          </td>
+        `;
+        tbodyPedidos.appendChild(tr);
+      });
+    }
+
+    function populateSelects() {
+      const selCerveza = $('selector-cerveza');
+      selCerveza.innerHTML = '';
+      db.cervezas.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.id;
+        opt.textContent = c.nombre;
+        selCerveza.appendChild(opt);
+      });
+
+      const selAcc = $('selector-accesorio');
+      selAcc.innerHTML = '';
+      db.accesorios.forEach(a => {
+        if (a.disponible) {
+          const opt = document.createElement('option');
+          opt.value = a.id;
+          opt.textContent = `${a.nombre} - ${a.precio}`;
+          selAcc.appendChild(opt);
+        }
+      });
+    }
+
+    function setupEventListeners() {
+      $('btn-agregar').addEventListener('click', () => abrirFormularioAlta());
+      $('buscar').addEventListener('input', e => renderTablaPedidos(e.target.value));
+
+      tbodyPedidos.addEventListener('click', (e) => {
+        const id = e.target.getAttribute('data-id');
+        if (!id) return;
+        if (e.target.classList.contains('btn-ver')) abrirVerPedido(Number(id));
+        if (e.target.classList.contains('btn-modificar')) abrirFormularioEdicion(Number(id));
+        if (e.target.classList.contains('btn-cancelar-pedido')) cancelarPedido(Number(id));
+      });
+
+      // Barriles modal
+      $('btn-abrir-barriles').addEventListener('click', abrirModalBarriles);
+      $('btn-cancelar-barriles').addEventListener('click', () => $('modal-barriles').hidden = true);
+      $('btn-pedir-barriles').addEventListener('click', agregarBarrilesSeleccionados);
+
+      // Accesorios modal
+      $('btn-abrir-accesorios').addEventListener('click', abrirModalAccesorios);
+      $('btn-cancelar-accesorios').addEventListener('click', () => $('modal-accesorios').hidden = true);
+      $('btn-pedir-accesorios').addEventListener('click', agregarAccesoriosSeleccionados);
+
+      // Items table action (remover)
+      tablaItemsBody.addEventListener('click', (e) => {
+        if (e.target && e.target.dataset.index) {
+          const idx = Number(e.target.dataset.index);
+          const items = getFormItems();
+          items.splice(idx,1);
+          setFormItems(items);
+          recalcMontos();
+        }
+      });
+
+      // Monto accesorios manual change -> recalcular total
+      $('monto-accesorios').addEventListener('input', () => recalcMontos());
+
+      // Guardar / Cancelar
+      $('form-pedido').addEventListener('submit', guardarPedido);
+      $('btn-cancelar').addEventListener('click', cerrarFormulario);
+
+      // Logo click (ya tiene href="/")
+      // Validaciones simples al cambiar fecha entrega
+      $('fecha-entrega').addEventListener('change', (e) => {
+        const f = e.target.value;
+        if (f && new Date(f) < startOfToday()) {
+          alert('Fecha de entrega no puede ser menor a la fecha actual.');
+          e.target.value = '';
+        }
+      });
+    }
+
+    // Helpers para formulario
+    function abrirFormularioAlta() {
+      clearForm();
+      $('pedido-id').value = 'Auto';
+      $('fecha-pedido').value = hoyISO();
+      $('form-section').hidden = false;
+      $('estado-pedido').value = 'pendiente';
+      $('monto-cerveza').value = 0;
+      $('monto-accesorios').value = 0;
+      $('total-general').value = 0;
+      tablaItemsBody.innerHTML = '';
+    }
+
+    function abrirFormularioEdicion(id) {
+      const p = db.pedidos.find(x => x.id === id);
+      if (!p) { alert('Pedido no encontrado'); return; }
+      fillFormFromPedido(p);
+      // no se puede modificar fechaPedido, email, telefono, monto por cerveza
+      $('fecha-pedido').readOnly = true;
+      $('cliente-email').readOnly = true;
+      $('cliente-telefono').readOnly = true;
+      $('monto-cerveza').readOnly = true;
+      $('form-section').hidden = false;
+    }
+
+    function abrirVerPedido(id) {
+      const p = db.pedidos.find(x => x.id === id);
+      if (!p) { alert('Pedido no encontrado'); return; }
+      fillFormFromPedido(p);
+      // deshabilitar todo para solo ver
+      Array.from(document.querySelectorAll('#form-pedido input, #form-pedido select, #form-pedido textarea, #form-pedido button')).forEach(el => {
+        if (el.id === 'btn-cancelar') return;
+        if (el.id === 'btn-guardar') el.hidden = true;
+        el.disabled = true;
+      });
+      $('form-section').hidden = false;
+    }
+
+    function cancelarPedido(id) {
+      const p = db.pedidos.find(x => x.id === id);
+      if (!p) { alert('Pedido no encontrado'); return; }
+      if (confirm('Confirmar cancelación del pedido #' + id + '?')) {
+        p.estado = 'cancelado';
+        renderTablaPedidos();
+      }
+    }
+
+    function clearForm() {
+      $('form-pedido').reset();
+      $('fecha-pedido').readOnly = false;
+      $('cliente-email').readOnly = false;
+      $('cliente-telefono').readOnly = false;
+      $('monto-cerveza').readOnly = true;
+      $('monto-cerveza').value = '';
+      tablaItemsBody.innerHTML = '';
+      $('form-pedido').querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = false);
+      $('btn-guardar').hidden = false;
+    }
+
+    function fillFormFromPedido(p) {
+      $('pedido-id').value = p.id;
+      $('fecha-pedido').value = p.fechaPedido;
+      $('fecha-entrega').value = p.fechaEntrega;
+      $('hora-entrega').value = p.horaEntrega;
+      $('cliente-nombre').value = p.cliente.nombre;
+      $('cliente-email').value = p.cliente.email;
+      $('cliente-telefono').value = p.cliente.telefono;
+      $('cliente-domicilio').value = p.cliente.domicilio;
+      $('nota').value = p.nota || '';
+      setFormItems(p.items ? JSON.parse(JSON.stringify(p.items)) : []);
+      $('monto-accesorios').value = p.montoAccesorios || 0;
+      recalcMontos();
+      $('estado-pedido').value = p.estado || 'pendiente';
+      $('estado-pago').checked = !!p.pagado;
+    }
+
+    function getFormItems() {
+      const raw = tablaItemsBody.querySelectorAll('tr');
+      const items = [];
+      raw.forEach(tr => {
+        const tipo = tr.dataset.tipo;
+        const descripcion = tr.dataset.descripcion;
+        const cantidad = Number(tr.dataset.cantidad);
+        const precioUnidad = Number(tr.dataset.preciounidad);
+        items.push({ tipo, descripcion, cantidad, precioUnidad });
+      });
+      return items;
+    }
+
+    function setFormItems(items) {
+      tablaItemsBody.innerHTML = '';
+      items.forEach((it, idx) => {
+        const tr = document.createElement('tr');
+        tr.dataset.tipo = it.tipo;
+        tr.dataset.descripcion = it.descripcion;
+        tr.dataset.cantidad = it.cantidad;
+        tr.dataset.preciounidad = it.precioUnidad;
+        tr.innerHTML = `
+          <td>${it.tipo}</td>
+          <td>${escapeHtml(it.descripcion)}</td>
+          <td>${it.cantidad}</td>
+          <td>${formatNumber(it.precioUnidad)}</td>
+          <td>${formatNumber(it.cantidad * it.precioUnidad)}</td>
+          <td><button type="button" data-index="${idx}">Quitar</button></td>
+        `;
+        tablaItemsBody.appendChild(tr);
+      });
+      recalcMontos();
+    }
+
+    // Modal barriles: mostrar solo barriles llenos para la cerveza seleccionada
+    function abrirModalBarriles() {
+      const sel = $('selector-cerveza').value;
+      const cerveza = db.cervezas.find(c => c.id === sel);
+      if (!cerveza) return;
+      const cont = $('lista-barriles');
+      cont.innerHTML = '';
+      cerveza.barriles.filter(b => b.lleno).forEach(b => {
+        const div = document.createElement('div');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = b.id;
+        cb.dataset.cervezaId = cerveza.id;
+        cb.dataset.cervezaNombre = cerveza.nombre;
+        cb.dataset.precioPorLitro = cerveza.precioPorLitro;
+        div.appendChild(cb);
+        const label = document.createElement('label');
+        label.textContent = `${b.id} - ${cerveza.nombre} (${cerveza.litrosPorBarril} L)`;
+        div.appendChild(label);
+        cont.appendChild(div);
+      });
+      $('modal-barriles').hidden = false;
+    }
+
+    function agregarBarrilesSeleccionados() {
+      const checks = Array.from(document.querySelectorAll('#lista-barriles input[type="checkbox"]:checked'));
+      if (checks.length === 0) { alert('No hay barriles seleccionados'); return; }
+      const items = getFormItems();
+      checks.forEach(ch => {
+        // Para cada barril, agregar item tipo barril con precio por litro*litrosPorBarril
+        const cerveza = db.cervezas.find(c => c.id === ch.dataset.cervezaId);
+        const precioUnidad = cerveza.precioPorLitro * cerveza.litrosPorBarril;
+        items.push({ tipo: 'barril', descripcion: `${cerveza.nombre} ${ch.value}`, cantidad: 1, precioUnidad });
+        // Marcar el barril como no lleno en DB (simulación)
+        cerveza.barriles.find(b => b.id === ch.value).lleno = false;
+      });
+      setFormItems(items);
+      $('modal-barriles').hidden = true;
+      populateSelects();
+    }
+
+    // Modal accesorios
+    function abrirModalAccesorios() {
+      const cont = $('lista-accesorios');
+      cont.innerHTML = '';
+      db.accesorios.filter(a => a.disponible).forEach(a => {
+        const div = document.createElement('div');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = a.id;
+        cb.dataset.nombre = a.nombre;
+        cb.dataset.precio = a.precio;
+        div.appendChild(cb);
+        const label = document.createElement('label');
+        label.textContent = `${a.nombre} - ${a.precio}`;
+        div.appendChild(label);
+        cont.appendChild(div);
+      });
+      $('modal-accesorios').hidden = false;
+    }
+
+    function agregarAccesoriosSeleccionados() {
+      const checks = Array.from(document.querySelectorAll('#lista-accesorios input[type="checkbox"]:checked'));
+      if (checks.length === 0) { alert('No hay accesorios seleccionados'); return; }
+      const items = getFormItems();
+      checks.forEach(ch => {
+        const acc = db.accesorios.find(a => a.id === ch.value);
+        // agregar como item tipo accesorio
+        items.push({ tipo: 'accesorio', descripcion: acc.nombre, cantidad: 1, precioUnidad: acc.precio });
+      });
+      setFormItems(items);
+      $('modal-accesorios').hidden = true;
+    }
+
+    function recalcMontos() {
+      const items = getFormItems();
+      const montoCerveza = items.filter(i => i.tipo === 'barril').reduce((s, it) => s + (it.cantidad * it.precioUnidad), 0);
+      const montoAccesoriosIter = items.filter(i => i.tipo === 'accesorio').reduce((s, it) => s + (it.cantidad * it.precioUnidad), 0);
+      // monto accesorios global editable por usuario: sumar accesorios manual y el campo monto-accesorios (si se desea)
+      const montoAccesoriosCampo = Number($('monto-accesorios').value || 0);
+      const montoAccesoriosTotal = montoAccesoriosIter + montoAccesoriosCampo;
+      $('monto-cerveza').value = montoCerveza;
+      $('total-general').value = montoCerveza + montoAccesoriosTotal;
+    }
+
+    // Guardar pedido (alta o modificación)
+    function guardarPedido(e) {
+      e.preventDefault();
+      // Validaciones: campos obligatorios
+      const fechaPedido = $('fecha-pedido').value;
+      const fechaEntrega = $('fecha-entrega').value;
+      const clienteNombre = $('cliente-nombre').value.trim();
+      const clienteEmail = $('cliente-email').value.trim();
+      const clienteTelefono = $('cliente-telefono').value.trim();
+      const clienteDomicilio = $('cliente-domicilio').value.trim();
+      const items = getFormItems();
+
+      if (!fechaPedido || !clienteNombre || !clienteEmail || !clienteTelefono || !clienteDomicilio) {
+        alert('Complete todos los campos obligatorios del cliente y fecha de pedido.');
+        return;
+      }
+      if (!fechaEntrega) {
+        alert('Ingrese fecha de entrega.');
+        return;
+      }
+      if (new Date(fechaEntrega) < startOfToday()) {
+        alert('Fecha de entrega no puede ser menor a hoy.');
+        return;
+      }
+      if (items.length === 0) {
+        alert('El pedido debe contener al menos un ítem.');
+        return;
+      }
+
+      const idVal = $('pedido-id').value;
+      const esAlta = idVal === 'Auto' || !idVal;
+      const pedidoObj = {
+        id: esAlta ? db.nextId++ : Number(idVal),
+        fechaPedido: $('fecha-pedido').value,
+        cliente: {
+          nombre: clienteNombre,
+          email: clienteEmail,
+          telefono: clienteTelefono,
+          domicilio: clienteDomicilio
+        },
+        fechaEntrega: fechaEntrega,
+        horaEntrega: $('hora-entrega').value,
+        items: items,
+        montoAccesorios: Number($('monto-accesorios').value || 0),
+        nota: $('nota').value,
+        estado: $('estado-pedido').value,
+        pagado: !!$('estado-pago').checked
+      };
+      // monto cerveza calculado automáticamente (se guarda en items)
+      if (esAlta) {
+        db.pedidos.push(pedidoObj);
+      } else {
+        const idx = db.pedidos.findIndex(p => p.id === pedidoObj.id);
+        if (idx >= 0) db.pedidos[idx] = pedidoObj;
+      }
+      cerrarFormulario();
+      renderTablaPedidos();
+      alert('Pedido guardado.');
+    }
+
+    function cerrarFormulario() {
+      $('form-section').hidden = true;
+      clearForm();
+    }
+
+    // Cálculo total de un pedido
+    function totalPedido(p) {
+      const montoCerveza = (p.items || []).filter(i => i.tipo === 'barril').reduce((s, it) => s + (it.cantidad * it.precioUnidad), 0);
+      const montoAccesorios = Number(p.montoAccesorios || 0) + (p.items || []).filter(i => i.tipo === 'accesorio').reduce((s, it) => s + (it.cantidad * it.precioUnidad), 0);
+      return montoCerveza + montoAccesorios;
+    }
+
+    // Utilidades pequeñas
+    function hoyISO() {
+      const d = new Date();
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth()+1).padStart(2,'0');
+      const dd = String(d.getDate()).padStart(2,'0');
+      return `${yyyy}-${mm}-${dd}`;
+    }
+    function startOfToday() {
+      const d = new Date();
+      d.setHours(0,0,0,0);
+      return d;
+    }
+    function formatNumber(n) {
+      return Number(n).toFixed(2);
+    }
+    function escapeHtml(s) {
+      if (!s) return '';
+      return String(s).replace(/[&<>"']/g, function(m){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]; });
+    }
+
+    // Inicializar la app
+    init(); 
+    </script>
 </body>
 </html>
